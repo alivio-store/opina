@@ -586,6 +586,14 @@
         POTENCIAL DAS AVALIAÇÕES
       </div>
 
+      <h3 style="margin:0 0 12px;font-size:24px;line-height:1.25">
+        Tem Mais 98 Propagandas Para Você Avaliar
+      </h3>
+      <p>
+        Continue no app. O saque dos valores destas respostas é feito
+        pelo aplicativo, após baixar e acessar sua conta.
+      </p>
+
       <a href="#como" class="cta">
         CONTINUAR
       </a>
@@ -840,30 +848,7 @@
 
 
   function no(card){
-
-    if(handled[card]) return;
-
-    handled[card] = true;
-
-    answered++;
-
-    document.getElementById(
-      "buttons" + card
-    ).style.display = "none";
-
-    const message =
-      document.getElementById(
-        "registered" + card
-      );
-
-    message.innerText =
-      "✓ Resposta registrada";
-
-    message.style.display =
-      "block";
-
-    finish();
-
+    yes(card);
   }
 
 
