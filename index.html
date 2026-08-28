@@ -110,30 +110,12 @@
     }
 
     .video{
-      position:relative;
-      display:flex;
-      height:230px;
-      align-items:center;
-      justify-content:center;
-      background:linear-gradient(135deg,#5b5be7,#8b5cf6);
-      color:#fff;
-      font-size:60px
-    }
-
-    .video.green{
-      background:linear-gradient(135deg,#039855,#12b76a)
-    }
-
-    .video:after{
-      content:"PROPAGANDA POLÍTICA";
-      position:absolute;
-      bottom:14px;
-      left:14px;
-      padding:6px 9px;
-      border-radius:6px;
-      background:rgba(0,0,0,.45);
-      font-size:10px;
-      font-weight:900
+      display:block;
+      width:100%;
+      height:auto;
+      aspect-ratio:16 / 9;
+      object-fit:contain;
+      background:#000;
     }
 
     .card-body{padding:24px}
@@ -495,7 +477,10 @@
       <!-- PROPAGANDA 1 -->
       <div class="card">
 
-        <div class="video">▶</div>
+        <video class="video" controls playsinline preload="metadata" aria-label="Vídeo 1">
+          <source src="video1.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo. <a href="video1.mp4">Abrir vídeo 1</a>.
+        </video>
 
         <div class="card-body">
 
@@ -530,7 +515,10 @@
       <!-- PROPAGANDA 2 -->
       <div class="card">
 
-        <div class="video green">▶</div>
+        <video class="video" controls playsinline preload="metadata" aria-label="Vídeo 2">
+          <source src="video2.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo. <a href="video2.mp4">Abrir vídeo 2</a>.
+        </video>
 
         <div class="card-body">
 
